@@ -18,7 +18,7 @@ public class AboutController {
     private AboutService aboutService;
 
     @RequestMapping(value = "/about", method = {RequestMethod.GET, RequestMethod.POST})
-    public String getAbout() {
+    public String getAbout() throws Exception{
         About about = new About();
         about.setAboutMessage("Hello world!");
         aboutService.saveAbout(about);

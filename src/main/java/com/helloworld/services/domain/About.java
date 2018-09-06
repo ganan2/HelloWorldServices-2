@@ -25,4 +25,12 @@ public class About {
     public void setAboutMessage(String aboutMessage) {
         this.aboutMessage = aboutMessage;
     }
+
+    @Override
+    public String toString() {
+        return "About{" +
+                "mongoId='" + mongoId + '\'' +
+                ", aboutMessage='" + aboutMessage + '\'' +
+                '}';
+    }
 }
